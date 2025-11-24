@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": false,
+
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  z-index: 20;
+  transition: background .25s;
+  box-sizing: border-box; /* Importante para que el padding no cause desbordamiento */
+}
+
+.header.transparent {
+  background: transparent;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,150,255,0.95),0 0 18px rgba(0,120,255,0.85);
+}
+
+.header.solid {
+  background: #ffffff;
+  color: #111;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.header .brand {
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0,170,255,1),0 0 20px rgba(30,180,255,0.9);
+  white-space: nowrap; /* Evita que el texto del brand se rompa */
+}
+
+.header nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  justify-content: center;
+}
+
+.header nav a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(0,160,255,0.95),0 0 20px rgba(0,140,255,0.8);
+  white-space: nowrap; /* Evita que los links se rompan en múltiples líneas */
+}
+
+.header .icons {
+  display: flex;
+  gap: 12px;
+}
+
+.header .icon {
+  font-size: 18px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+    flex-wrap: wrap; /* Permite que los elementos se apilen */
+    gap: 10px;
+  }
+
+  .header nav ul {
+    gap: 12px;
+  }
+
+  .header .brand {
+    font-size: 0.9em;
+  }
+
+  .header nav a {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header nav ul {
+    gap: 8px;
+  }
+
+  .header .brand {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+
+  .header nav a {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,4 @@
+.home-root{min-height:100vh;display:flex;align-items:center;justify-content:center}
+.home-hero{padding-top:80px;text-align:center;color:#fff;text-shadow:0 0 15px rgba(0,180,255,1),0 0 30px rgba(0,140,255,0.95)}
+.home-hero h1{font-size:48px;margin-bottom:8px}
+.home-hero p{font-size:20px}
