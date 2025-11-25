@@ -10,13 +10,11 @@ const isHome = location.pathname === "/";
 
 return (
 <header className={isHome ? "header transparent" : "header solid"}>
-<div className="brand">TechSolutions</div>
+<div className="brand">VoxNews</div>
 <nav>
 <ul>
 <li><Link to="/">Inicio</Link></li>
-<li><Link to="/servicios">Servicios</Link></li>
-<li><Link to="/acerca">Acerca</Link></li>
-<li><Link to="/contacto">Contacto</Link></li>
+<li><Link to="/servicios">Crear</Link></li>
 </ul>
 </nav>
 </header>
